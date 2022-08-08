@@ -11,6 +11,7 @@
 }
 
 .nav-logo {
+margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,14 +23,14 @@
   box-shadow: 0 0 0 2px #fff;
 }
 
-.nav-logo::before {
+/* .nav-logo::before {
   content: "";
   display: block;
   width: 32px;
   height: 32px;
   border-radius: 50%;
   background-color: var(--highlight-color);
-}
+} */
 
 .sidebar .nav {
   display: flex;
