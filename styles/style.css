@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("variables.css");
+@import url("components/sidebar.css");
+@import url("components/hero.css");
+@import url("components/about.css");
+@import url("components/resume.css");
+@import url("components/portfolio.css");
+@import url("components/contact.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  background-color: var(--primary-bg-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+::selection {
+  color: var(--text-color);
+  background-color: var(--highlight-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  position: relative;
+}
+
+.content {
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.section-title {
+  margin: 0 0 80px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 64px;
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  margin: 0 0 32px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.highlighted-text {
+  color: var(--highlight-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:not(:first-child) {
+  margin-left: 24px;
+}
+
+.btn--primary {
+  background-color: var(--highlight-color);
+}
+
+.btn--secondary {
+  background-color: var(--secondary-bg-color);
+}
+
+.box {
+  background-color: var(--dim-color);
+  border-radius: 8px;
+}
+
+.item--focused:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white;
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .section-subtitle {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

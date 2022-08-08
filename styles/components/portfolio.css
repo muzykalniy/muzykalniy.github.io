@@ -1,0 +1,77 @@
+/* =========== SIDEBAR =========== */
+
+.portfolio-items {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-item {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
+
+.portfolio-work {
+  display: block;
+  position: relative;
+  padding-top: 80%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio-work-screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio-work-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 12px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  text-align: center;
+  background-color: var(--highlight-color);
+  color: var(--text-color);
+  transition: top 0.5s;
+}
+
+.portfolio-work:hover .portfolio-work-info {
+  top: 0;
+  transform: translateY(0%);
+  height: 100%;
+}
+
+.portfolio-work-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+}
+
+.portfolio-work-title::after {
+  content: "";
+  display: block;
+  margin: 4px auto 0;
+  width: 32px;
+  height: 2px;
+  border-radius: 100vw;
+  background-color: var(--text-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-item {
+    min-width: 100%;
+  }
+}

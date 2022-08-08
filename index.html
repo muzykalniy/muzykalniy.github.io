@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dmytro Sokolovskyi</title>
+    <!-- NORMALIZE -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <input type="checkbox" id="sidebar-trigger" />
+      <!-- ============== SIDEBAR ============== -->
+      <aside class="sidebar">
+        <nav class="nav">
+          <a href="#" class="nav-logo" aria-label="logotype"></a>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#hero" class="nav-link">
+                <i class="nav-link-icon fas fa-home"></i>
+                <span class="nav-link-text">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                <i class="nav-link-icon fas fa-user"></i>
+                <span class="nav-link-text">About</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">
+                <i class="nav-link-icon fas fa-id-card"></i>
+                <span class="nav-link-text">Resume</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">
+                <i class="nav-link-icon fas fa-briefcase"></i>
+                <span class="nav-link-text">Portfolio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                <i class="nav-link-icon fas fa-envelope"></i>
+                <span class="nav-link-text">Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <a
+            class="scroll-top fas fa-chevron-up"
+            href="#top"
+            aria-label="scroll to top"
+          ></a>
+        </nav>
+
+        <label
+          for="sidebar-trigger"
+          class="sidebar-toggle fas fa-bars"
+          aria-label="navigation toggle button"
+        ></label>
+      </aside>
+      <!-- ============== CONTENT ============== -->
+      <main class="content">
+        <div id="top"></div>
+        <!-- ============== HERO ============== -->
+        <section id="hero" class="section hero">
+          <div class="container">
+            <h1 class="main-title">Dmytro Sokolovskyi</h1>
+            <p class="hero-slogan">I am a Front-End Developer</p>
+            <ul class="hero-socials">
+              <li class="hero-socials-item">
+                <a
+                  href="#"
+                  class="hero-socials-link fab fa-facebook-f"
+                  aria-label="link to facebook profile"
+                ></a>
+              </li>
+              <li class="hero-socials-item">
+                <a
+                  href="#"
+                  class="hero-socials-link fab fa-github"
+                  aria-label="link to github profile"
+                ></a>
+              </li>
+              <li class="hero-socials-item">
+                <a
+                  href="#"
+                  class="hero-socials-link fab fa-linkedin-in"
+                  aria-label="link to linkedin profile"
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============== ABOUT ============== -->
+        <section id="about" class="section about">
+          <div class="container">
+            <h2 class="section-title">
+              About <span class="highlighted-text">Me</span>
+            </h2>
+
+            <div class="about-content">
+              <div class="about-description">
+                <p class="about-text box">
+                  <span class="about-greeting highlighted-text">Hello,</span>
+                  I am Bolby Doe, web developer from London, United Kingdom. I
+                  have rich experience in web site design and building and
+                  customization, also I am good at WordPress.
+                </p>
+
+                <div class="about-actions">
+                  <a href="assets/cv.docx" download class="btn btn--secondary">
+                    Download CV
+                  </a>
+                  <a href="#contact" class="btn btn--secondary"> Hire Me </a>
+                </div>
+              </div>
+
+              <div class="about-avatar">
+                <img src="assets/images/user-pic.jpg" alt="User picture" />
+              </div>
+            </div>
+
+            <div class="about-skills">
+              <h3 class="section-subtitle">
+                Here Are <span class="highlighted-text">My Skills</span>
+              </h3>
+              <ul class="about-skills-list">
+                <li class="about-skills-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/HTML5"
+                    target="_blank"
+                    class="about-skills-link box item--focused"
+                  >
+                    <img
+                      src="assets/images/skills-logo-html.svg"
+                      alt=""
+                      class="about-skills-img"
+                    />
+                    <h4 class="about-skills-label html">HTML5</h4>
+                  </a>
+                </li>
+                <li class="about-skills-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/CSS"
+                    target="_blank"
+                    class="about-skills-link box item--focused"
+                  >
+                    <img
+                      src="assets/images/skills-logo-css.svg"
+                      alt=""
+                      class="about-skills-img"
+                    />
+                    <h4 class="about-skills-label css">CSS3</h4>
+                  </a>
+                </li>
+                <li class="about-skills-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/JavaScript"
+                    target="_blank"
+                    class="about-skills-link box item--focused"
+                  >
+                    <img
+                      src="assets/images/skills-logo-js.svg"
+                      alt=""
+                      class="about-skills-img"
+                    />
+                    <h4 class="about-skills-label js">JavaScript</h4>
+                  </a>
+                </li>
+                <li class="about-skills-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/Sass"
+                    target="_blank"
+                    class="about-skills-link box item--focused"
+                  >
+                    <img
+                      src="assets/images/skills-logo-sass.svg"
+                      alt=""
+                      class="about-skills-img"
+                    />
+                    <h4 class="about-skills-label sass">SASS</h4>
+                  </a>
+                </li>
+                <li class="about-skills-item">
+                  <a
+                    href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                    target="_blank"
+                    class="about-skills-link box item--focused"
+                  >
+                    <img
+                      src="assets/images/skills-logo-bootstrap.svg"
+                      alt=""
+                      class="about-skills-img"
+                    />
+                    <h4 class="about-skills-label bootstrap">Bootstrap</h4>
+                  </a>
+                </li>
+                <li class="about-skills-item">
+                  <a
+                    href="https://ru.wikipedia.org/wiki/Gulp"
+                    target="_blank"
+                    class="about-skills-link box item--focused"
+                  >
+                    <img
+                      src="assets/images/skills-logo-gulp.svg"
+                      alt=""
+                      class="about-skills-img"
+                    />
+                    <h4 class="about-skills-label gulp">Gulp</h4>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============== RESUME ============== -->
+        <section id="resume" class="section resume">
+          <div class="container">
+            <h2 class="section-title">
+              My <span class="highlighted-text">Resume</span>
+            </h2>
+
+            <div class="resume-content">
+              <!-- EDUCATION -->
+              <div class="resume-education">
+                <h3 class="section-subtitle">
+                  <span
+                    class="
+                      highlighted-text
+                      resume-content-icon
+                      fas
+                      fa-graduation-cap
+                    "
+                  ></span>
+                  Education
+                </h3>
+                <ul class="resume-items box">
+                  <li class="resume-item">
+                    <h4 class="resume-item-title">Front-End Pro</h4>
+                    <div class="resume-item-subtitle">
+                      <time>2021</time>
+                      <span class="vertical-dilimiter">&#124;</span>
+                      <span>Hillel IT School</span>
+                    </div>
+                    <p class="resume-item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="resume-item-title">Front-End Basic</h4>
+                    <div class="resume-item-subtitle">
+                      <time>2020</time>
+                      <span class="vertical-dilimiter">&#124;</span>
+                      <span>Hillel IT School</span>
+                    </div>
+                    <p class="resume-item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="resume-item-title">
+                      Master In Computer Science
+                    </h4>
+                    <div class="resume-item-subtitle">
+                      <time>2007 - 2012</time>
+                      <span class="vertical-dilimiter">&#124;</span>
+                      <span>Odessa National Polytechnic University</span>
+                    </div>
+                    <p class="resume-item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- EXPERIENCE -->
+              <div class="resume-experience">
+                <h3 class="section-subtitle">
+                  <span
+                    class="highlighted-text resume-content-icon fas fa-pen"
+                  ></span>
+                  Experience
+                </h3>
+                <ul class="resume-items box">
+                  <li class="resume-item">
+                    <h4 class="resume-item-title">
+                      Javascript Software Engineer
+                    </h4>
+                    <div class="resume-item-subtitle">
+                      <time>2020 - present</time>
+                      <span class="vertical-dilimiter">&#124;</span>
+                      <span>EPAM Systems</span>
+                    </div>
+                    <p class="resume-item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="resume-item-title">Front-End Developer</h4>
+                    <div class="resume-item-subtitle">
+                      <time>2018 - 2020</time>
+                      <span class="vertical-dilimiter">&#124;</span>
+                      <span>The Product Engine</span>
+                    </div>
+                    <p class="resume-item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                  <li class="resume-item">
+                    <h4 class="resume-item-title">UI/UX Developer</h4>
+                    <div class="resume-item-subtitle">
+                      <time>2017 - 2018</time>
+                      <span class="vertical-dilimiter">&#124;</span>
+                      <span>Freelance</span>
+                    </div>
+                    <p class="resume-item-description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Quisque scelerisque diam non nisi semper, et elementum
+                      lorem ornare.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============== PORTFOLIO ============== -->
+        <section id="portfolio" class="section portfolio">
+          <div class="container">
+            <h2 class="section-title">
+              My <span class="highlighted-text">Works</span>
+            </h2>
+            <ul class="portfolio-items">
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-work item--focused"
+                >
+                  <img
+                    src="assets/images/portfolio-item-1.png"
+                    alt="Wisdom page"
+                    class="portfolio-work-screen"
+                  />
+                  <div class="portfolio-work-info">
+                    <h3 class="portfolio-work-title">Wisdom page</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-work item--focused"
+                >
+                  <img
+                    src="assets/images/portfolio-item-2.png"
+                    alt="Wisdom page"
+                    class="portfolio-work-screen"
+                  />
+                  <div class="portfolio-work-info">
+                    <h3 class="portfolio-work-title">Alivio</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-work item--focused"
+                >
+                  <img
+                    src="assets/images/portfolio-item-3.png"
+                    alt="Wisdom page"
+                    class="portfolio-work-screen"
+                  />
+                  <div class="portfolio-work-info">
+                    <h3 class="portfolio-work-title">Responsive Portfolio</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-work item--focused"
+                >
+                  <img
+                    src="assets/images/portfolio-item-4.png"
+                    alt="Wisdom page"
+                    class="portfolio-work-screen"
+                  />
+                  <div class="portfolio-work-info">
+                    <h3 class="portfolio-work-title">Animated 3D Cube</h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-work item--focused"
+                >
+                  <img
+                    src="assets/images/portfolio-item-5.png"
+                    alt="Wisdom page"
+                    class="portfolio-work-screen"
+                  />
+                  <div class="portfolio-work-info">
+                    <h3 class="portfolio-work-title">
+                      Responsive Grid Gallery
+                    </h3>
+                  </div>
+                </a>
+              </li>
+              <li class="portfolio-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="portfolio-work item--focused"
+                >
+                  <img
+                    src="assets/images/portfolio-item-6.png"
+                    alt="Wisdom page"
+                    class="portfolio-work-screen"
+                  />
+                  <div class="portfolio-work-info">
+                    <h3 class="portfolio-work-title">Bootstrap Template</h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============== CONTACT ============== -->
+        <section id="contact" class="section contact">
+          <div class="container">
+            <h2 class="section-title">
+              Get <span class="highlighted-text">In Touch</span>
+            </h2>
+            <div class="contact-content">
+              <!-- CONTACTS -->
+              <ul class="contact-list">
+                <li class="contact-list-item">
+                  <a
+                    href="https://goo.gl/maps/nYJg6F7gnnaJXKxr6"
+                    target="_blank"
+                    class="contact-list-link box item--focused"
+                  >
+                    <i class="contact-list-icon fas fa-map-marker-alt"></i>
+                    <em class="contact-list-label">Odesa, Ukraine</em>
+                  </a>
+                </li>
+                <li class="contact-list-item">
+                  <a
+                    href="tel:+11234567890"
+                    target="_blank"
+                    class="contact-list-link box item--focused"
+                  >
+                    <i class="contact-list-icon fas fa-phone-alt"></i>
+                    <em class="contact-list-label">(+1) 123 456 7890</em>
+                  </a>
+                </li>
+                <li class="contact-list-item">
+                  <a
+                    href="mailto:dmytro@example.com"
+                    class="contact-list-link box item--focused"
+                  >
+                    <i class="contact-list-icon fas fa-paper-plane"></i>
+                    <em class="contact-list-label">dmytro@example.com</em>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- FORM -->
+              <form class="contact-form box">
+                <div class="contact-form-row">
+                  <input
+                    type="text"
+                    name="name"
+                    class="contact-form-field"
+                    placeholder="Name *"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    class="contact-form-field"
+                    placeholder="Email *"
+                    required
+                  />
+                </div>
+                <div class="contact-form-row">
+                  <input
+                    type="text"
+                    name="subject"
+                    class="contact-form-field"
+                    placeholder="Subject *"
+                    required
+                  />
+                </div>
+                <div class="contact-form-row">
+                  <textarea
+                    name="message"
+                    rows="7"
+                    class="contact-form-field"
+                    placeholder="Write message"
+                  ></textarea>
+                </div>
+                <footer class="contact-form-actions">
+                  <button type="submit" class="btn btn--primary">
+                    Send message
+                  </button>
+                </footer>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

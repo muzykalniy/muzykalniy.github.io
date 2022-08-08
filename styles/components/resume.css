@@ -1,0 +1,74 @@
+/* =========== HERO =========== */
+
+.resume-content {
+  display: flex;
+  gap: 30px;
+}
+
+.resume-education,
+.resume-experience {
+  flex-basis: 100%;
+}
+
+.resume-content-icon {
+  margin-right: 12px;
+}
+
+.resume-items {
+  padding: 24px;
+}
+
+.resume-item {
+  margin-top: 24px;
+  border-left: 2px solid var(--highlight-color);
+}
+
+.resume-item:first-child {
+  margin-top: 0;
+}
+
+.resume-item-title,
+.resume-item-subtitle,
+.resume-item-description {
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.resume-item-title {
+  margin: 0;
+}
+
+.resume-item-subtitle {
+  margin-top: 12px;
+  position: relative;
+  color: var(--highlight-color);
+}
+
+.resume-item-subtitle::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  transform: translateX(calc(-50% - 1px));
+  background-color: var(--highlight-color);
+}
+
+.resume-item-description {
+  margin: 12px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .resume-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .resume-experience {
+    order: -1;
+  }
+}
