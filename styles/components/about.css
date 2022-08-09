@@ -144,7 +144,12 @@
 
   .about-actions {
     margin-top: 32px;
-    justify-content: center;
+	 flex-direction: column;
+	 width: 100%;
+	 align-items: center;
+    justify-content: space-between;
+	 flex-wrap: wrap;
+	 gap: 20px;
   }
 
   .about-avatar {

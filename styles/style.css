@@ -120,7 +120,7 @@ ul {
   .section {
     padding: 40px 0;
   }
-
+  
   .section-title {
     margin-bottom: 32px;
     font-size: 32px;
@@ -136,4 +136,7 @@ ul {
   .grid {
     grid-template-columns: 1fr;
   }
+  .btn:not(:first-child) {
+	margin-left: 0;
+ }
 }
