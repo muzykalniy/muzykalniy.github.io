@@ -32,8 +32,8 @@
 .resume-item-description,
 .resume-item-skills-main,
 .resume-item-skills-soft,
-.resume-item-skills-language,
-.resume-item-skills-hobby {
+.resume-item-skills-language
+ {
   padding-left: 32px;
   font-size: 14px;
   line-height: 20px;
@@ -46,8 +46,8 @@
 .resume-item-subtitle,
 .resume-item-skills-main,
 .resume-item-skills-soft,
-.resume-item-skills-language,
-.resume-item-skills-hobby {
+.resume-item-skills-language
+ {
   margin-top: 12px;
   position: relative;
   color: var(--highlight-color);
@@ -99,22 +99,11 @@
 	border-radius: 50%;
 	position: absolute;
 	left: 0;
-	top: 20px;
+	top: -5px;
 	transform: translateX(calc(-50% - 1px));
 	background-color: var(--highlight-color);
  }
- .resume-item-skills-hobby::before{
-	content: "";
-	display: block;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	position: absolute;
-	left: 0;
-	top: -1px;
-	transform: translateX(calc(-50% - 1px));
-	background-color: var(--highlight-color);
- }
+ 
 .about-skills-list{
 	margin-top: 20px;
 }

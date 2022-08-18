@@ -65,7 +65,7 @@
 }
 
 .about-skills-item {
-  flex-basis: 138px;
+  flex-basis: 138px;   
 }
 
 .about-skills-link {
@@ -81,6 +81,10 @@
   max-height: 80px;
   width: 100%;
 }
+.about-skills-jmeter {
+	max-height: 80px;
+	width: 100%;
+ }
 .about-skills-img.about-skills-img-pairwise {
 	margin-top: 40px;
 	max-height: 80px;
@@ -95,35 +99,32 @@
 }
 .about-skills-label.postman {
 	color: #e08a27;
- }
- 
- .about-skills-label.charles {
-	color: #ddd3ea;
- }
- 
- .about-skills-label.mysql {
-	color: #488593;
- }
- .about-skills-label.miro {
-	color: #e2fb20;
- }
- .about-skills-label.pairwise-tool {
-	margin-top: 30px;
-	color: #51a1f1;
- }
+}
 .about-skills-label.html {
   color: #ef7f4f;
 }
-
+.about-skills-label.charles {
+	color: #ddd3ea;
+ }
 .about-skills-label.css {
   color: #30ace0;
 }
-
+.about-skills-label.jmeter {
+	color: #e40b0b;
+}
+.about-skills-label.mysql {
+	color: #488593;
+}
+.about-skills-label.miro {
+	color: #e2fb20;
+}
 .about-skills-label.jira {
   color: #5AAEF8;
 }
-
-
+.about-skills-label.pairwise-tool {
+	margin-top: 30px;
+	color: #51a1f1;
+}
 @media only screen and (max-width: 768px) {
   .about-content {
     position: relative;
